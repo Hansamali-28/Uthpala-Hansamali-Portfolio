@@ -1,0 +1,297 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+body {
+  @apply bg-surface-950 text-white antialiased;
+  background-image: radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.12), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(20, 184, 166, 0.1), transparent 40%);
+  background-attachment: fixed;
+}
+
+html.light-mode body {
+  @apply text-slate-900;
+  background: #f8fafc;
+  background-image: radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.08), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(20, 184, 166, 0.05), transparent 40%);
+}
+
+html.light-mode .glass-card {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(15, 23, 42, 0.12);
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.12);
+}
+
+html.light-mode .hero-role-text {
+  color: #334155;
+}
+
+html.light-mode .bg-hero-gradient {
+  background-image: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 45%, #ffffff 100%);
+}
+
+html.light-mode .text-white {
+  color: #0f172a !important;
+}
+
+html.light-mode .text-gray-400 {
+  color: #64748b !important;
+}
+
+html.light-mode .text-gray-500 {
+  color: #475569 !important;
+}
+
+html.light-mode .border-white\/10 {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+html.light-mode .theme-toggle-btn {
+  color: #0f172a;
+  border-color: rgba(56, 189, 248, 0.35);
+  background-color: rgba(56, 189, 248, 0.18);
+}
+
+html.light-mode .theme-toggle-btn:hover {
+  color: #0c4a6e;
+  border-color: rgba(6, 182, 212, 0.55);
+  background-color: rgba(56, 189, 248, 0.25);
+}
+
+.about-intro-text {
+  color: #d1d5db;
+}
+
+html.light-mode .about-intro-text {
+  color: #334155;
+}
+
+.theme-toggle-btn {
+  background-color: rgba(56, 189, 248, 0.12);
+  color: #e0f2fe;
+  border-color: rgba(56, 189, 248, 0.35);
+}
+
+.theme-toggle-btn:hover {
+  background-color: rgba(56, 189, 248, 0.22);
+}
+
+/* Project Git button styling (default dark + light-mode override) */
+.project-github-btn {
+  color: #e6f6ff;
+  border-color: rgba(255, 255, 255, 0.12);
+  background-color: transparent;
+}
+.project-github-btn:hover {
+  color: #22d3ee;
+  border-color: rgba(34, 211, 238, 0.28);
+}
+
+html.light-mode .project-github-btn {
+  color: #075985;
+  border-color: rgba(6, 182, 212, 0.18);
+  background-color: rgba(14, 165, 233, 0.06);
+}
+html.light-mode .project-github-btn:hover {
+  color: #045b6b;
+  border-color: rgba(6, 182, 212, 0.36);
+  background-color: rgba(14, 165, 233, 0.12);
+}
+
+.experience-type-label {
+  color: #bfdbfe;
+  border-color: rgba(56, 189, 248, 0.3);
+  background-color: rgba(56, 189, 248, 0.12);
+}
+
+.experience-type-label:hover {
+  color: #ffffff;
+}
+
+html.light-mode .experience-type-label {
+  color: #065f46;
+  border-color: rgba(14, 165, 233, 0.25);
+  background-color: rgba(56, 189, 248, 0.14);
+}
+
+html.light-mode .experience-type-label:hover {
+  color: #0c4a6e;
+}
+
+.type-education-icon {
+  background-color: #0f172a;
+  border-color: #22d3ee;
+  color: #22d3ee;
+}
+
+.type-work-icon {
+  background-color: #111827;
+  border-color: #34d399;
+  color: #34d399;
+}
+
+.type-leadership-icon {
+  background-color: #111827;
+  border-color: #f59e0b;
+  color: #f59e0b;
+}
+
+.type-certification-icon {
+  background-color: #111827;
+  border-color: #f472b6;
+  color: #f472b6;
+}
+
+html.light-mode .type-education-icon {
+  background-color: rgba(56, 189, 248, 0.12);
+  border-color: rgba(34, 211, 238, 0.35);
+  color: #0c4a6e;
+}
+
+html.light-mode .type-work-icon {
+  background-color: rgba(34, 211, 238, 0.12);
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #0f766e;
+}
+
+html.light-mode .type-leadership-icon {
+  background-color: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.35);
+  color: #92400e;
+}
+
+html.light-mode .type-certification-icon {
+  background-color: rgba(244, 114, 182, 0.12);
+  border-color: rgba(244, 114, 182, 0.35);
+  color: #9d174d;
+}
+
+.type-education-label {
+  color: #bae6fd;
+  border-color: rgba(56, 189, 248, 0.3);
+  background-color: rgba(56, 189, 248, 0.12);
+}
+
+.type-work-label {
+  color: #a7f3d0;
+  border-color: rgba(52, 211, 153, 0.3);
+  background-color: rgba(52, 211, 153, 0.12);
+}
+
+.type-leadership-label {
+  color: #fde68a;
+  border-color: rgba(245, 158, 11, 0.3);
+  background-color: rgba(245, 158, 11, 0.12);
+}
+
+.type-certification-label {
+  color: #f9a8d4;
+  border-color: rgba(244, 114, 182, 0.3);
+  background-color: rgba(244, 114, 182, 0.12);
+}
+
+html.light-mode .type-education-label {
+  color: #0c4a6e;
+  border-color: rgba(56, 189, 248, 0.25);
+  background-color: rgba(56, 189, 248, 0.1);
+}
+
+html.light-mode .type-work-label {
+  color: #0f766e;
+  border-color: rgba(16, 185, 129, 0.25);
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+html.light-mode .type-leadership-label {
+  color: #92400e;
+  border-color: rgba(245, 158, 11, 0.25);
+  background-color: rgba(245, 158, 11, 0.1);
+}
+
+html.light-mode .type-certification-label {
+  color: #9d174d;
+  border-color: rgba(244, 114, 182, 0.25);
+  background-color: rgba(244, 114, 182, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2563eb, #14b8a6);
+  border-radius: 999px;
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface-card/60 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.35)];
+  }
+
+  .gradient-border {
+    position: relative;
+    border-radius: 1.75rem;
+  }
+  .gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, #2563eb, #06b6d4, #14b8a6);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-sky via-primary-cyan to-primary-teal;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 md:px-10 lg:px-16;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
+  }
+
+  .eyebrow {
+    @apply inline-block text-sm font-semibold tracking-widest uppercase text-accent-cyan mb-3;
+  }
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
