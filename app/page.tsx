@@ -11,8 +11,6 @@ import { Projects } from "@/components/sections/Projects";
 import { Experience } from "@/components/sections/Experience";
 import { Certificates } from "@/components/sections/Certificates";
 import { Gallery } from "@/components/sections/Gallery";
-import { Achievements } from "@/components/sections/Achievements";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { Contact } from "@/components/sections/Contact";
 
 export default function HomePage() {
@@ -30,8 +28,6 @@ export default function HomePage() {
         <Experience />
         <Certificates />
         <Gallery />
-        <Achievements />
-        <Testimonials />
         <Contact />
       </main>
       <Footer />
