@@ -56,44 +56,37 @@ healthcare workflows and patient care, helping me design more practical and effe
 
 I’m especially passionate about Data Analytics, while actively developing my skills in AI, machine learning, and full-stack development to support healthcare digital transformation.`;
 
-export const ABOUT_STATS: AboutStat[] = [
-  { label: "Projects", value: 18, suffix: "+" },
-  { label: "Certificates", value: 24, suffix: "+" },
-  { label: "Skills", value: 30, suffix: "+" },
-  { label: "Years Learning", value: 4, suffix: "+" },
-];
-
 export const ABOUT_TIMELINE: TimelineEntry[] = [
   {
     year: "2023 - Present ",
-    title: "Bcherlor of Science (Hons) ",
+    title: "BHSc(Hons) in Health Information and Communication Technology ",
     description:
       "Began undergraduate studies in Health Information and Communication Technology, focusing on how digital systems transform patient care.",
   },
   {
-    year: "2023",
-    title: "Dove into Software Development",
+    year: "2026",
+    title: "University Capstone Project: Building an  EHR System",
     description:
-      "Picked up Java, Python, and JavaScript, and started building full-stack applications while studying data structures and system design.",
+      "Currently collaborating in a team to design and develop a full-stack Electronic Health Record (EHR) system.",
   },
-  {
-    year: "2024",
-    title: "Business Management Minor",
-    description:
-      "Added Business Management coursework to understand the operational and strategic side of healthcare technology adoption.",
-  },
-  {
-    year: "2025",
-    title: "AI & Data Analytics Focus",
+   {
+    year: "2026",
+    title: "Focusing on AI & Data Analytics ",
     description:
       "Explored machine learning and data analytics tools like Power BI and Tableau to build predictive healthcare solutions.",
   },
   {
-    year: "2026",
-    title: "Building EHR Systems",
-    description:
-      "Currently collaborating in a team to design and develop a full-stack Electronic Health Record (EHR) system.",
-  },
+  year: "2024-2025",
+  title: "Business Management Coursework",
+  description:
+   "Completed a certificate program covering core management principles, strategy, and business operations to complement my background in Healthcare ICT."},
+  {
+  year: "2020 - 2022",
+  title: "Advanced Level Education",
+  description: "Completed G.C.E. Advanced Level in Technology Stream at B/Mahiyangana National Collage.",
+}
+ 
+
 ];
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
@@ -174,9 +167,8 @@ export const PROJECTS: Project[] = [
     image: "/images/projects/codeplay.png",
     tags: ["React", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/uthpalahansamali/codeplay",
-    liveUrl: "codey-next-three.vercel.app",
+    liveUrl: "https://codey-next-three.vercel.app/",
   },
-  
   {
     id: "Gizmo",
     title: " Gizmo",
@@ -186,9 +178,8 @@ export const PROJECTS: Project[] = [
       "Gizmo is a modern e-commerce platform designed for mobile phone shopping, offering a seamless user experience with intuitive product browsing, a robust shopping cart, and a secure checkout process.",
     image: "/images/projects/gizmo.png",
     tags: ["HTML", "MySQL", "CSS"],
-    githubUrl: "https://www.linkedin.com/posts/uthpala-hansamali-170a64295_turning-an-idea-into-reality-gizmo-during-ugcPost-7442167773340004352-4iJX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeGieQBEBHYzTAmorSWPwPZWpxGwAyNDXU",
-    liveUrl: "https://hms-demo.uthpala.dev",
-    
+    githubUrl: "",
+    liveUrl: "https://www.linkedin.com/posts/uthpala-hansamali-170a64295_turning-an-idea-into-reality-gizmo-during-ugcPost-7442167773340004352-4iJX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeGieQBEBHYzTAmorSWPwPZWpxGwAyNDXU",
   },
   /*
   {
@@ -254,7 +245,7 @@ export const PROJECTS: Project[] = [
 export const EXPERIENCE: ExperienceItem[] = [
   {
     id: "exp-1",
-    role: "BSc (Hons) in Health Information and Communication Technology",
+    role: "BHSc(Hons) in Health Information and Communication Technology",
     organization: "Gampaha Wickramarachchi University of Indigenous Medicine",
     period: "2023 — Present",
     description:
@@ -268,7 +259,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     organization: "Gampaha Wickramarachchi University of Indigenous Medicine",
     period: "2024 —2025",
     description:
-      "Currently studying Business Management Studies (certificate program), covering management principles, strategy, and business operations alongside healthcare ICT studies.",
+      "Completed a certificate program covering core management principles, strategy, and business operations to complement my background in Healthcare ICT." ,
     location: "yakkala, Sri Lanka",
     type: "certification",
   },
@@ -319,7 +310,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     location: "Mahiyangana, Sri Lanka",
     period: "2019 May — 2022 February",
     description:
-      "G.C.E Advanced Level studies completed at B/Mahiyangana National College.  ",
+      "G.C.E Advanced Level studies completed at B/Mahiyangana National College.",
     type: "education",
   },
 ];
@@ -368,6 +359,21 @@ export const CERTIFICATES: CertificateItem[] = [
     date: "2023",
     image: "/images/certificates/cert-mysql.svg",
   },*/
+];
+
+export const ABOUT_STATS: AboutStat[] = [
+  { label: "Projects", value: PROJECTS.length, suffix: "+" },
+  { label: "Certificates", value: CERTIFICATES.length, suffix: "+" },
+  {
+    label: "Skills",
+    value: SKILL_CATEGORIES.reduce((total, category) => total + category.items.length, 0),
+    suffix: "+",
+  },
+  {
+    label: "Years Learning",
+    value: Math.max(1, new Date().getFullYear() - 2022),
+    suffix: "+",
+  },
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
@@ -419,9 +425,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 
 export const ACHIEVEMENTS: Achievement[] = [
   //{ label: "Hackathons", value: 6 },
-  { label: "Projects", value: 18, suffix: "+" },
+  { label: "Projects", value: PROJECTS.length, suffix: "+" },
   { label: "GitHub Repositories", value: 32, suffix: "+" },
-  { label: "Certificates", value: 24, suffix: "+" },
+  { label: "Certificates", value: CERTIFICATES.length, suffix: "+" },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
