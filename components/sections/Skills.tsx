@@ -14,6 +14,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { GlowCard } from "@/components/ui/GlowCard";
 import { SKILL_CATEGORIES } from "@/lib/data";
+import { computeSkillLevel } from "@/lib/skillLevel";
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Code2,
@@ -48,23 +49,26 @@ export function Skills() {
                   </div>
 
                   <ul className="space-y-4">
-                    {category.items.map((skill) => (
-                      <li key={skill.name}>
-                        <div className="flex justify-between text-sm mb-1.5">
-                          <span className="text-gray-300">{skill.name}</span>
-                          <span className="text-gray-500">{skill.level}%</span>
-                        </div>
-                        <div className="h-1.5 rounded-full bg-white/5 overflow-hidden">
-                          <motion.div
-                            initial={{ width: 0 }}
-                            whileInView={{ width: `${skill.level}%` }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 1, ease: "easeOut" }}
-                            className="h-full rounded-full bg-gradient-to-r from-primary via-primary-cyan to-primary-teal"
-                          />
-                        </div>
-                      </li>
-                    ))}
+                    {category.items.map((skill) => {
+                      const level = computeSkillLevel(skill.name);
+                      return (
+                        <li key={skill.name}>
+                          <div className="flex justify-between text-sm mb-1.5">
+                            <span className="text-gray-300">{skill.name}</span>
+                            <span className="text-gray-500">{level}%</span>
+                          </div>
+                          <div className="h-1.5 rounded-full bg-white/5 overflow-hidden">
+                            <motion.div
+                              initial={{ width: 0 }}
+                              whileInView={{ width: `${level}%` }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 1, ease: "easeOut" }}
+                              className="h-full rounded-full bg-gradient-to-r from-primary via-primary-cyan to-primary-teal"
+                            />
+                          </div>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </GlowCard>
               </Reveal>

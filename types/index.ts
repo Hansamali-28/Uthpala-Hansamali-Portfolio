@@ -13,7 +13,7 @@ export interface SocialLink {
 
 export interface SkillItem {
   name: string;
-  level: number; // 0 - 100, used for progress bars
+ 
 }
 
 export interface SkillCategory {
