@@ -393,7 +393,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     { src: "/images/gallery/mindmester1.jpg", alt: "SCR project workshop" },
     { src: "/images/gallery/mindmester2.jpg", alt: "SCR project workshop" },
     { src: "/images/gallery/mindmester3.jpg", alt: "SCR project workshop" },
-    { src: "/images/gallery/workshop-4.jpg", alt: "SCR project workshop" },
+    { src: "/images/gallery/mindmester4.jpg", alt: "SCR project workshop" },
   ],
 },
   {
@@ -407,7 +407,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
       { src: "/images/gallery/AIworkshop1.jpeg", alt: "AI workshop (TAS)" },
       { src: "/images/gallery/AIworkshop2.jpeg", alt: "AI workshop (TAS)" },
       { src: "/images/gallery/AIworkshop3.jpeg", alt: "AI workshop (TAS)" },
-      { src: "/images/gallery/gallery-6.svg", alt: "AI workshop (TAS)"},
     ],
   },
   {
@@ -418,12 +417,12 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     date: "2026 Oct",
     description: "A vibrant community and youth development program that brought together creativity, learning, and social engagement in a memorable event.",
     images: [
-      { src: "/images/gallery/SPAG SPARK-1.jpeg", alt: "World Children Day Program" },
-      { src: "/images/gallery/SPAG SPARK-2.jpeg", alt: "World Children Day Program" },
-      { src: "/images/gallery/SPAG SPARK-3.jpeg", alt: "World Children Day Program" },
-      { src: "/images/gallery/SPAG SPARK-4.jpeg", alt: "World Children Day Program" },
-      { src: "/images/gallery/SPAG SPARK5-5.jpeg",alt: "World Children Day Program" },
-      { src: "/images/gallery/SPAG SPARK-6.jpeg", alt: "World Children Day Program" }
+      { src: "/images/gallery/recovered/spag-spark-1.webp", alt: "SPAG Spark event poster" },
+      { src: "/images/gallery/recovered/spag-spark-2.webp", alt: "Students at the SPAG Spark program" },
+      { src: "/images/gallery/recovered/spag-spark-3.webp", alt: "Students taking part in the SPAG Spark program" },
+      { src: "/images/gallery/recovered/spag-spark-4.webp", alt: "Community members at the SPAG Spark program" },
+      { src: "/images/gallery/recovered/spag-spark-5.webp", alt: "Participants at the SPAG Spark program" },
+      { src: "/images/gallery/recovered/spag-spark-6.webp", alt: "SPAG Spark program gathering" },
     ],
   },
   {
@@ -434,12 +433,11 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     date: "2026 January",
     description: "Supporting flood-affected students with school supplies to keep their learning journey alive.",
     images: [
-       { src: "/images/gallery/SPAG-01.jpeg", alt: "EDU" },
-       { src: "/images/gallery/SPAG-02.jpeg", alt: "EDU" },
-       { src: "/images/gallery/SPAG-03.jpeg", alt: "EDU" },
-       { src: "/images/gallery/SPAG-04.jpeg", alt: "EDU" },
-       { src: "/images/gallery/SPAG-05.jpeg", alt: "EDU" },
-       { src: "/images/gallery/SPAG-06.jpeg", alt: "EDU" },
+      { src: "/images/gallery/recovered/spag-unity-1.webp", alt: "Students receiving support through SPAG Unity" },
+      { src: "/images/gallery/recovered/spag-unity-2.webp", alt: "Students at the SPAG Unity school program" },
+      { src: "/images/gallery/recovered/spag-unity-3.webp", alt: "SPAG Unity volunteers and community members" },
+      { src: "/images/gallery/recovered/spag-unity-4.webp", alt: "SPAG Unity school visit" },
+      { src: "/images/gallery/recovered/spag-unity-5.webp", alt: "School supplies for the SPAG Unity program" },
     ],
   },
 
@@ -451,11 +449,11 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     date: "2025 June",
     description: "A university event that celebrated creativity, innovation, and student engagement through a dynamic showcase of ideas and talent.",
     images: [
-      { src: "/images/gallery/MINISCOPE-1.jpeg", alt: "MINISCOPE 2025" },
-      { src: "/images/gallery/MINISCOPE-2.jpeg", alt: "MINISCOPE 2025" },
-      { src: "/images/gallery/MINISCOPE-3.jpeg", alt: "MINISCOPE 2025" },
-      { src: "/images/gallery/MINISCOPE-4.jpeg", alt: "MINISCOPE 2025" },
-      { src: "/images/gallery/MINISCOPE-5.jpeg", alt: "MINISCOPE 2025" },
+      { src: "/images/gallery/recovered/miniscope-1.webp", alt: "MINISCOPE 2025 event" },
+      { src: "/images/gallery/recovered/miniscope-2.webp", alt: "MINISCOPE 2025 participants" },
+      { src: "/images/gallery/recovered/miniscope-3.webp", alt: "MINISCOPE 2025 activity" },
+      { src: "/images/gallery/recovered/miniscope-4.webp", alt: "Student project showcase at MINISCOPE 2025" },
+      { src: "/images/gallery/recovered/miniscope-5.webp", alt: "MINISCOPE 2025 gathering" },
     ],
   },
   {
@@ -466,9 +464,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     date: "2024 Nov",
     description: "An insightful industrial visit that exposed students to real-world technology practices, innovation culture, and career inspiration in the software industry.",
     images: [
-      { src: "/images/gallery/codegen-1.jpeg", alt: "CodeGen" },
-      { src: "/images/gallery/codegen-2.jpeg", alt: "CodeGen" },
-      { src: "/images/gallery/codegen-3.jpeg", alt: "CodeGen" },
+      { src: "/images/gallery/recovered/codegen-1.webp", alt: "CodeGen International visit" },
+      { src: "/images/gallery/recovered/codegen-2.webp", alt: "Students during the CodeGen International visit" },
+      { src: "/images/gallery/recovered/codegen-3.webp", alt: "Students at CodeGen International" },
     ],
   },
   {
@@ -479,9 +477,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     date: "2025 Dec",
     description: "A science advancement program that emphasized learning, collaboration, and inspiration through an engaging academic experience.",
     images: [
-      { src: "/images/gallery/TAS-1.jpeg", alt: "TAS" },
-      { src: "/images/gallery/TAS-2.jpeg", alt: "TAS" },
-      { src: "/images/gallery/TAS-3.jpeg", alt: "TAS" },
+      { src: "/images/gallery/recovered/science-advancement-1.webp", alt: "Science Advancement Program participants" },
+      { src: "/images/gallery/recovered/science-advancement-2.webp", alt: "Students during the Science Advancement Program" },
+      { src: "/images/gallery/recovered/science-advancement-3.webp", alt: "Science Advancement Program materials" },
     ],
   },
 ];

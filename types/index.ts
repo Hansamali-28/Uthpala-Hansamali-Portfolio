@@ -62,6 +62,9 @@ export interface GalleryItem {
   id: string;
   title: string;
   category: string;
+  location: string;
+  date: string;
+  description: string;
   images: GalleryImage[];
   span?: "row-span-1" | "row-span-2";
 }
